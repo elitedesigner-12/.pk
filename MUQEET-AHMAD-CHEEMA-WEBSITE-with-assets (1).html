@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muqeet Ahmad Cheema | Elite Graphic Designer</title>
+<meta name="description" content="Muqeet Ahmad Cheema is an Elite Graphic Designer specializing in logo design, branding, poster design and modern web design.">
+<meta property="og:title" content="Muqeet Ahmad Cheema | Elite Graphic Designer">
+<meta property="og:description" content="Creative Designs. Powerful Impact.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231f4bff'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="ld" id="ld" aria-hidden="true">MAC</div>
+<header><div class="w nv">
+<a href="#/home" class="logo" aria-label="Muqeet Ahmad Cheema, home">MUQEET AHMAD <b>CHEEMA</b></a>
+<nav id="nav" aria-label="Main"><ul>
+<li><a href="#/home">Home</a></li><li><a href="#/about">About</a></li><li><a href="#/services">Services</a></li><li><a href="#/portfolio">Portfolio</a></li><li><a href="#/process">Process</a></li><li><a href="#/contact">Contact</a></li></ul></nav>
+<a class="btn" href="#/contact">Let's Work Together</a>
+<button class="bg" id="bg" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu"><i></i><i></i><i></i></button>
+</div></header>
+
+<button class="admin-fab" id="adminFab" aria-label="Open admin panel" title="Admin panel">⚙</button>
+<dialog id="adminDialog" aria-labelledby="adminTitle">
+  <div class="mb">
+    <div class="mh">
+      <div><span class="lbl">Private Controls</span><h2 class="d" id="adminTitle">Portfolio Admin</h2></div>
+      <button class="x" id="adminClose" aria-label="Close">✕</button>
+    </div>
+    <div id="adminLogin">
+      <p style="color:var(--mut)">Enter the admin password to manage portfolio images and service rates on this device.</p>
+      <div class="f"><label for="adminPass">Password</label><input id="adminPass" type="password" inputmode="numeric" autocomplete="off" placeholder="Enter password"></div>
+      <div class="er" id="adminErr"></div>
+      <button class="btn" id="adminLoginBtn">Unlock Admin</button>
+    </div>
+    <div id="adminApp" hidden>
+      <div class="admin-grid">
+        <div class="admin-box">
+          <h3 class="d">Add Portfolio Image</h3>
+          <p style="color:var(--mut);font-size:.9rem">Upload an image, choose its category, add a title and optional rate. Images are saved in this browser using local storage.</p>
+          <div class="f"><label for="aTitle">Project title</label><input id="aTitle" placeholder="e.g. Restaurant Poster"></div>
+          <div class="r">
+            <div class="f"><label for="aCat">Category</label><select id="aCat"><option>Branding</option><option>Logo Design</option><option>Poster Design</option><option>Web Design</option><option>Social Media Design</option></select></div>
+            <div class="f"><label for="aRate">Rate</label><input id="aRate" placeholder="e.g. PKR 5,000"></div>
+          </div>
+          <div class="f"><label for="aPin">Pinterest inspiration/search URL (optional)</label><input id="aPin" placeholder="https://www.pinterest.com/search/pins/?q=..."></div>
+          <div class="f"><label for="aImg">Image</label><input id="aImg" type="file" accept="image/*"></div>
+          <button class="btn" id="aAdd">Add to Portfolio</button>
+          <button class="btn o" id="aClear" type="button" style="margin-top:8px">Clear Added Items</button>
+        </div>
+        <div class="admin-box">
+          <h3 class="d">Service Rates</h3>
+          <p style="color:var(--mut);font-size:.9rem">Set your displayed starting rates. Leave a field blank if you don't want to show a price.</p>
+          <div id="rateEditor"></div>
+          <button class="btn" id="saveRates">Save Rates</button>
+        </div>
+      </div>
+      <div class="admin-box" style="margin-top:16px">
+        <h3 class="d">Added Portfolio Items</h3>
+        <div class="admin-list" id="adminList"></div>
+      </div>
+      <p style="color:var(--mut);font-size:.78rem;margin-top:16px">Note: this password protects the browser-side editor only. For a real multi-device CMS, the admin panel needs server-side authentication and a database.</p>
+    </div>
+  </div>
+</dialog>
+
+<main id="main">
+
+<section class="hero" data-p="home" style="padding-top:60px"><div class="w hg">
+<div>
+<span class="lbl">Elite Graphic Designer</span>
+<h1>MUQEET AHMAD CHEEMA</h1>
+<p class="big d" aria-label="Graphic Designer"><span class="b">Graphic</span><span>Designer</span></p>
+<div class="script" style="margin-top:8px">Creative Services</div>
+<p class="t">CREATIVE DESIGNS. POWERFUL IMPACT.<br>BRINGING YOUR IDEAS TO LIFE<br>WITH CREATIVITY AND STRATEGY.</p>
+<div class="bs"><a class="btn" href="#/portfolio">View My Work</a><a class="btn o" href="#/contact">Start a Project</a></div>
+</div>
+<div class="vis" role="img" aria-label="Illustration of a laptop with design software, a poster and a logo mockup">
+<div class="sh s1"></div><div class="sh s2"></div><div class="blob"></div>
+<div class="lap"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><div class="sd"></div><div class="mn"></div></div></div>
+<div class="pos"><div>CREATIVE<br>IMPACT</div></div>
+<div class="lg">M<span>C</span></div>
+<div class="bdg"><b>6+</b>YEARS OF<br>EXPERIENCE</div>
+</div></div></section>
+
+<section id="about" data-p="home about"><div class="w ag">
+<div class="pic rv" role="img" aria-label="Portrait placeholder of Muqeet Ahmad Cheema, replace with a photo"></div>
+<div class="rv"><span class="lbl">Who I Am</span><h2 class="d">About Muqeet</h2>
+<p>I'm Muqeet Ahmad Cheema, a passionate graphic designer focused on creating modern, meaningful and visually powerful designs. I help businesses and individuals transform ideas into strong visual identities and professional digital experiences.</p>
+<ul class="ex"><li>Logo Design</li><li>Branding</li><li>Web Design</li><li>Poster Design</li><li>Social Media Design</li><li>Visual Identity</li></ul>
+<div class="st" id="st"><div><b data-n="6" data-s="+">0</b><span>Years Experience</span></div><div><b data-n="100" data-s="+">0</b><span>Projects</span></div><div><b data-n="50" data-s="+">0</b><span>Clients</span></div><div><b>24/7</b><span>Creative Thinking</span></div></div>
+</div></div></section>
+
+<section id="services" class="alt" data-p="home services"><div class="w">
+<span class="lbl">What I Do</span><h2 class="d">My Services</h2><p class="sub">Creative solutions designed to make your brand stand out.</p>
+<div class="sg" id="sg"></div></div></section>
+
+<section id="portfolio" data-p="home portfolio"><div class="w">
+<span class="lbl">Portfolio</span><h2 class="d">Selected Work</h2><p class="sub">A collection of creative projects designed with purpose and precision. <a class="pin-link" href="https://www.pinterest.com/search/pins/?q=graphic%20design%20portfolio" target="_blank" rel="noopener">Browse Pinterest inspiration ↗</a></p>
+<div class="fl" id="fl" role="group" aria-label="Filter projects"></div>
+<div class="pg" id="pg"></div></div></section>
+
+<section id="process" class="alt" data-p="home process"><div class="w">
+<span class="lbl">How I Work</span><h2 class="d">My Creative Process</h2><p class="sub">Five clear steps from first conversation to final files.</p>
+<div class="tl" id="tl"></div></div></section>
+
+<section id="why" data-p="home about process"><div class="w">
+<span class="lbl">Why Me</span><h2 class="d">Why Work With Me</h2><p class="sub">Design that is thoughtful, precise and built around your goals.</p>
+<div class="wg" id="wg"></div></div></section>
+
+<section id="testi" class="alt" data-p="home about"><div class="w">
+<span class="lbl">Kind Words</span><h2 class="d">Testimonials</h2>
+<div class="tg" id="tg"></div>
+<p class="note">Sample content: these testimonials are editable placeholders for the development version, not verified client reviews.</p></div></section>
+
+<section class="cta" data-p="home about services portfolio process" style="padding-top:90px"><div class="w"><div class="cb rv">
+<h2 class="d">Have a project in mind?</h2><p>Let's turn your idea into something remarkable.</p>
+<a class="btn" href="#/contact">Start Your Project</a></div></div></section>
+
+<section class="ct" data-p="contact"><div class="w cg">
+<div class="cl rv"><span class="lbl">Contact</span>
+<p class="big d" style="margin-top:14px"><span class="b" style="animation:none;clip-path:none">Let's</span><span style="animation:none;clip-path:none">Work</span><span style="animation:none;clip-path:none">Together</span></p>
+<h1>MUQEET AHMAD CHEEMA</h1><div class="script">Elite Graphic Designer</div>
+<p style="margin:14px 0 4px"><a class="em" href="mailto:ahmadmuqeet788@gmail.com">ahmadmuqeet788@gmail.com</a></p>
+<p style="color:var(--mut)">Available for freelance projects, design collaborations and creative work.</p>
+<div class="soc" data-soc></div></div>
+<div class="card rv" id="card">
+<div id="fw"><h2 class="d">Let's create something amazing</h2>
+<p style="color:var(--mut);margin:8px 0 0">Have an idea, project or brand that needs a creative touch? Tell me about your project and let's turn your vision into a powerful visual experience.</p>
+<form id="fm" novalidate>
+<fieldset><legend>CLIENT DETAILS</legend>
+<div class="r"><div class="f"><label for="nm">Full Name*</label><input id="nm" name="Client Name" autocomplete="name" required aria-describedby="e-nm"><div class="er" id="e-nm" role="alert"></div></div>
+<div class="f"><label for="em">Email Address*</label><input id="em" name="Client Email" type="email" autocomplete="email" required aria-describedby="e-em"><div class="er" id="e-em" role="alert"></div></div></div>
+<div class="r"><div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" name="Phone / WhatsApp" type="tel" autocomplete="tel"></div>
+<div class="f"><label for="co">Company / Brand Name</label><input id="co" name="Company" autocomplete="organization"></div></div></fieldset>
+<fieldset><legend>PROJECT DETAILS</legend>
+<div class="f"><label for="sv">What service do you need?*</label><select id="sv" name="Service" required aria-describedby="e-sv"><option value="">Select a service</option><option>Logo Design</option><option>Branding</option><option>Poster Design</option><option>Web Design</option><option>Social Media Design</option><option>Other</option></select><div class="er" id="e-sv" role="alert"></div></div>
+<div class="f"><label for="pt">Project Title</label><input id="pt" name="Project Title"></div>
+<div class="f"><label for="pd">Project Description*</label><textarea id="pd" name="Project Description" required aria-describedby="e-pd"></textarea><div class="er" id="e-pd" role="alert"></div></div></fieldset>
+<fieldset><legend>SCHEDULING</legend>
+<div class="r"><div class="f"><label for="dt">Preferred Date</label><input id="dt" name="Preferred Date" type="date"></div><div class="f"><label for="tm">Preferred Time</label><input id="tm" name="Preferred Time" type="time"></div></div>
+<div class="f" role="radiogroup" aria-labelledby="cml"><span id="cml">Preferred Contact Method</span><div class="rd" id="rd"></div></div></fieldset>
+<fieldset><legend>BUDGET AND DEADLINE</legend>
+<div class="r"><div class="f"><label for="bu">Project Budget</label><select id="bu" name="Budget"><option value="">Select budget</option><option>Under $50</option><option>$50–$100</option><option>$100–$250</option><option>$250–$500</option><option>$500+</option></select></div>
+<div class="f"><label for="dl">Desired Project Deadline</label><input id="dl" name="Deadline" type="date"></div></div>
+<div class="f"><label for="ad">Tell me anything else I should know about your project.</label><textarea id="ad" name="Additional Information"></textarea></div></fieldset>
+<label class="ck"><input type="checkbox" id="ag" required> <span>I agree to be contacted regarding my project inquiry.</span></label>
+<div class="er" id="e-ag" role="alert" style="margin:-14px 0 14px"></div>
+<button class="btn" type="submit">Send Project Inquiry</button>
+</form></div>
+<div class="ok" id="ok" hidden tabindex="-1"><div class="tick" aria-hidden="true">✓</div><h2 class="d">Inquiry sent successfully</h2>
+<p style="color:var(--mut);max-width:420px;margin:12px auto 26px">Thank you for contacting Muqeet Ahmad Cheema. Your project inquiry has been received. I'll review your requirements and get back to you soon.</p>
+<a class="btn" href="#/home">Back to Home</a></div>
+</div></div></section>
+</main>
+
+<footer><div class="w"><div class="fg">
+<div><div class="logo">MUQEET AHMAD <b style="color:#6c8bff">CHEEMA</b></div><p style="font-weight:700;letter-spacing:.12em;font-size:.8rem">ELITE GRAPHIC DESIGNER</p><p>Creative Designs. Powerful Impact.</p><p><a href="mailto:ahmadmuqeet788@gmail.com" style="color:#fff">ahmadmuqeet788@gmail.com</a></p></div>
+<div><h3>NAVIGATE</h3><ul><li><a href="#/home">Home</a></li><li><a href="#/about">About</a></li><li><a href="#/services">Services</a></li><li><a href="#/portfolio">Portfolio</a></li><li><a href="#/process">Process</a></li><li><a href="#/contact">Contact</a></li></ul></div>
+<div><h3>FOLLOW</h3><div class="soc" data-soc></div></div></div>
+<div class="cp">© 2026 Muqeet Ahmad Cheema. All Rights Reserved.</div></div></footer>
+
+<dialog id="dg" aria-labelledby="dgt"><div class="mb" id="mb"></div></dialog>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
